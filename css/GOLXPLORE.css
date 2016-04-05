@@ -1,0 +1,271 @@
+﻿//
+// Copyright (c) 2014 All Right Reserved, http://scottalexander.co/ Created by Scott Alexander 
+//
+// Permission is granted to use this file in anyway as long as recognition is given to the author when used.
+//
+
+
+#GOL header, footer, nav, section {
+    display: block;
+}
+
+
+#GOL h2 {
+    color:white;
+	margin-top:15px;
+	margin-bottom:20px;
+	font-size:24px;
+}
+
+
+#GOL .control-panel {
+    padding-top:0px;
+	width:100%;
+}
+
+#GOL .leftcontrols {
+    width:100%;
+    padding-top:0px;
+    padding-bottom:0px;
+    float:left;
+	padding-left:15px;
+}
+
+#GOL .bottomcontrols{
+    margin: 0 auto;
+    width:90%;
+    position:relative;
+    padding-top:16px;
+    float:left;
+    padding-left:35px;
+    padding-bottom:10px;
+}
+
+#GOL .alive-section {
+}
+
+#GOL .birth-section {
+    
+}
+
+
+#GOL {
+    margin: 0 auto;
+    max-width:1100px;
+	width:100%;
+	
+}
+#GOL #GOLcontrols {
+    width:100%;
+    position:relative;
+    height:250px;
+    margin: 0 auto;
+    background-color:#1d6269;
+	line-height:30%;
+}
+
+#GOL #GOLGrid {
+    font-size: 0px;
+    margin: 0 auto;
+    width:80%;
+    position:relative;
+    margin: 0 auto;
+    width:100%;
+}
+	#GOL #GOLGrid table {
+		width: 100%;
+	}
+    #GOL table th.life-element, table td.life-element {
+        padding: 0;
+    }
+
+#GOL .life-element {
+    cursor: pointer;
+    height: 10px;
+    border: 1px solid black;
+}
+#GOL .life-element.alive {
+    background-color: blue;
+}
+
+#GOL .custom-button {
+    /*float: left;*/
+    width: auto;
+    height: 30px;
+    width: 90px;
+    border:none;
+    background-color: #216E76;
+    display: inline-block;
+    margin: 5px;
+    border-radius:3px;
+    color:white;
+	font-size:14px;
+}
+
+#GOL .custom-button.type2 {
+    /*float: left;*/
+    width: auto;
+    height: 25px;
+    width: 25px;
+    border:none;
+    background-color: #216E76;
+    display: inline-block;
+    margin: 5px;
+    border-radius:3px;
+    color:white;
+}
+
+#GOL .custom-button.type2.enabled {
+    /*float: left;*/
+    border:none;
+    background-color: #222;
+    display: inline-block;
+    margin: 5px;
+    border-radius:3px;
+    color:white;
+}
+
+    #GOL .generation {
+	display:inline;
+	float:right;
+	width:50%;
+        padding-left:7px;
+        margin-top:12px;
+        color:white;
+        font-size:16px;
+    }
+#GOL .custom-button:hover {
+    cursor: pointer;
+    background-color: #0F3236;
+}
+
+#GOL .custom-button.disabled {
+    background-color:lightgray;
+    cursor:default;
+    color:#1d6269;
+}
+
+
+@media only screen and (max-width: 943px) {
+
+    #GOL #GOLcontrols {
+        width:466px;
+        height: 230px;
+    }
+
+    #GOL #GOLGrid {
+        width:466px;
+    }
+
+    #GOL .leftcontrols {
+        width:100%;
+    }
+
+    #GOL .custom-button.type2 {
+    /*float: left;*/
+    width: auto;
+    height: 30px;
+    width:5%;
+    border:none;
+    background-color: #216E76;
+    display: inline-block;
+    margin: 5px;
+    border-radius:3px;
+    color:white;
+}
+
+}
+
+@media only screen and (max-width:574px) {
+    #GOL #GOLcontrols {
+        width:auto;
+        height: auto;
+    }
+
+    #GOL #GOLGrid {
+        width:auto;
+    }
+	
+	#GOL .leftcontrols{
+		float:none;
+		padding:15px;
+	}
+	
+	#GOL .generation{
+		float:none;
+	}
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+   #GOL #GOLcontrols {
+        width:466px;
+        height: 230px;
+    }
+
+    #GOL #GOLGrid {
+        width:466px;
+    }
+
+    #GOL .leftcontrols {
+        width:100%;
+    }
+
+    #GOL .bottomcontrols{
+        padding:5px;
+    }
+    #GOL .custom-button.type2 {
+        /*float: left;*/
+        width: auto;
+        height: 25px;
+        width: 5%;
+        border: none;
+        background-color: #3fb79f;
+        display: inline-block;
+        margin: 5px;
+        border-radius: 3px;
+        color: white;
+    }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    #GOL #GOLcontrols {
+        width:auto;
+        height:auto;
+        padding-bottom:10px;
+    }
+
+    #GOL #GOLGrid {
+        width:auto;
+    }
+
+    #GOL .leftcontrols {
+        width:100%;
+        padding:0px;
+    }
+
+    #GOL .bottomcontrols{
+        padding:5px;
+    }
+    #GOL .custom-button {
+        /*float: left;*/
+        width: auto;
+        height: 24px;
+        width: 65px;
+
+	    font-size:11px;
+    }
+
+       #GOL .custom-button.type2 {
+        /*float: left;*/
+        width: auto;
+        height: 25px;
+        width: 5%;
+        border: none;
+        background-color: #3fb79f;
+        display: inline-block;
+        margin: 5px;
+        border-radius: 3px;
+        color: white;
+    }
+}
+    
